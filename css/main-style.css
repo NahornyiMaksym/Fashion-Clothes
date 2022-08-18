@@ -5,15 +5,6 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
-.left {
-  color: blue; }
-
-.right {
-  color: green; }
-
-.left {
-  font-weight: bold; }
-
 * {
   margin: 0;
   padding: 0;
@@ -25,9 +16,7 @@ header {
   font-size: 14px;
   font-family: "Raleway", sans-serif;
   padding-top: 12px;
-  position: absolute;
-  left: 0;
-  right: 0; }
+  padding-bottom: 20px; }
   header ul {
     flex-wrap: wrap; }
   header li {
@@ -44,7 +33,8 @@ header {
 
 .container {
   padding-left: 31px;
-  padding-right: 31px; }
+  padding-right: 31px;
+  margin: auto; }
 
 a {
   text-decoration: none;
@@ -166,5 +156,27 @@ div.carousel a.right {
   top: 0;
   bottom: 0;
   width: 36%; }
+
+h1 {
+  font-weight: 400;
+  color: #000;
+  font-size: 100px;
+  font-family: "Liana"; }
+
+.text {
+  font-weight: 400;
+  color: #000;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif; }
+
+.small-title {
+  font-weight: 500;
+  color: #000;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 24px; }
+
+.main-section article {
+  padding-top: 100px; }
 
 /*# sourceMappingURL=main-style.css.map */

@@ -35,15 +35,7 @@ $main-font : 'Raleway', sans-serif;
     @content;
   }
 }
-.left{
-  color: blue;
-}
-.right {
-  color: green;
-}
-.left{
-  font-weight: bold;
-}
+
 
 * {
   margin: 0;
@@ -54,10 +46,10 @@ header {
   @include main-font(14px, 500);
   padding-top: 12px;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-
+  //position: absolute;
+  //left: 0;
+  //right: 0;
+  padding-bottom: 20px;
 
   ul {
     flex-wrap: wrap;
@@ -82,6 +74,7 @@ header {
 .container {
   padding-left: 31px;
   padding-right: 31px;
+  margin: auto;
 }
 a {
   text-decoration: none;
@@ -213,4 +206,23 @@ div.carousel a.right {
   top: 0;
   bottom: 0;
   width: 36%;
+}
+
+h1 {
+  @include font-liana(100px, $liana-black);
+}
+
+.text {
+  @include main-font(16px, 400);
+}
+
+.small-title {
+  @include main-font(20px, 500);
+  margin-bottom: 24px;
+}
+
+.main-section {
+  article {
+    padding-top: 100px;
+  }
 }
