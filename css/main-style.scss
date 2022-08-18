@@ -28,10 +28,56 @@ $main-font : 'Raleway', sans-serif;
   font-family: $main-font;
 }
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+header {
+  @include main-font(14px, 500);
+  padding-top: 12px;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+
+
+  ul {
+    flex-wrap: wrap;
+  }
+
+  li {
+    padding-top: 2px;
+    list-style: none;
+    margin: 0 18px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:first-of-type {
+      margin-left: 0;
+    }
+    @include max-screen(768px) {
+      margin-left: 0;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+}
+
+.language {
+  padding-top: 2px;
+  text-align: end;
 }
 
 div.carousel {
