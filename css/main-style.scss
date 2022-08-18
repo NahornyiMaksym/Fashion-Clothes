@@ -8,6 +8,8 @@
   font-display: swap;
 }
 
+@import "bootstrap.css";
+
 $font-liana : 'Liana';
 $liana-black : #000;
 $liana-white : #fff;
@@ -69,6 +71,10 @@ header {
   }
 }
 
+.container {
+  padding-left: 31px;
+  padding-right: 31px;
+}
 a {
   text-decoration: none;
   display: inline-block;

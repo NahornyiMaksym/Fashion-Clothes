@@ -1,3 +1,4 @@
+@import url(bootstrap.css);
 @font-face {
   font-family: 'Liana';
   src: url("../fonts/Liana.woff2") format("woff2"), url("../fonts/Liana.woff") format("woff"), url("../fonts/Liana.ttf") format("truetype");
@@ -31,6 +32,10 @@ header {
     @media screen and (max-width: 768px) {
       header li {
         margin-left: 0; } }
+
+.container {
+  padding-left: 31px;
+  padding-right: 31px; }
 
 a {
   text-decoration: none;
