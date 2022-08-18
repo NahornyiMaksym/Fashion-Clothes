@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div.carousel {
+  position: relative;
+}
+
+ul.items {
+  width: 1440px;
+  height: 600px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  /*margin-left: -320px;*/
+  /*margin-left: -400px;*/
+  position: relative;
+  align-items: center;
+}
+ul.items li {
+  list-style-type: none;
+  /*width: 288px;*/
+  /*width: 400px;*/
+  transition:
+          transform .5s linear,
+          left .5s linear,
+          margin-left .5s linear,
+          margin-right .5s linear,
+          width .5s linear,
+          height .5s linear;
+  position: relative;
+  left: 0;
+  /*transform: scale(0);*/
+  width: 0;
+  height: 0;
+}
+/* all items */
+ul.items li span {
+  display: none;
+}
+
+ul.items li:nth-child(3) {
+  margin-left: 10px;
+}
+ul.items li:nth-child(5) {
+  margin-right: 10px;
+}
+
+/* right items */
+ul.items li:nth-child(2),
+ul.items li:nth-child(6) {
+  /*transform: scale(.5);*/
+  width: 200px;
+  height: 300px;
+}
+ul.items li:nth-child(3) {
+  /*margin-left: -49px;*/
+  /*margin-right: 49px;*/
+}
+/* center item */
+ul.items li:nth-child(4) {
+  /*transform: scale(1);*/
+  width: 400px;
+  height: 600px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* left items */
+ul.items li:nth-child(3),
+ul.items li:nth-child(5) {
+  /*transform: scale(.75);*/
+  width: 300px;
+  height: 450px;
+}
+ul.items img {
+  /*width: 400px;*/
+  /*height: 600px;*/
+  width: 100%;
+  height: 100%;
+}
+
+/* titles */
+ul.titles {
+  padding: 0;
+  margin: 0;
+  display: block;
+  position: absolute;
+  top: 45%;
+  font-size: 60px;
+  width: 100%;
+  text-align: center;
+  color: red;
+}
+ul.titles li {
+  list-style-type: none;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform .5s linear, opacity .5s linear;
+  letter-spacing: 30px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+ul.titles li:nth-child(4) {
+  opacity: 1;
+  transform: scale(1);
+}
+div.carousel a.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 36%;
+}
+div.carousel a.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 36%;
+}
