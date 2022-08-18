@@ -1,3 +1,34 @@
+@font-face {
+  font-family: 'Liana';
+  src: url('../fonts/Liana.woff2') format('woff2'),
+  url('../fonts/Liana.woff') format('woff'),
+  url('../fonts/Liana.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$font-liana : 'Liana';
+$liana-black : #000;
+$liana-white : #fff;
+$main-font-color : #000;
+$main-font : 'Raleway', sans-serif;
+
+@mixin font-liana($size, $color) {
+  font-weight: 400;
+  color: $color;
+  font-size: $size;
+  font-family: $font-liana;
+}
+
+@mixin main-font($size, $weight) {
+  font-weight: $weight;
+  color: $main-font-color;
+  font-size: $size;
+  font-family: $main-font;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -103,6 +134,7 @@ ul.titles li {
   position: absolute;
   width: 100%;
   top: 0;
+  @include font-liana(170px, $liana-white);
 }
 ul.titles li:nth-child(4) {
   opacity: 1;

@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Liana';
+  src: url("../fonts/Liana.woff2") format("woff2"), url("../fonts/Liana.woff") format("woff"), url("../fonts/Liana.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
 * {
   margin: 0;
   padding: 0; }
@@ -90,7 +96,11 @@ ul.titles li {
   letter-spacing: 30px;
   position: absolute;
   width: 100%;
-  top: 0; }
+  top: 0;
+  font-weight: 400;
+  color: #fff;
+  font-size: 170px;
+  font-family: "Liana"; }
 
 ul.titles li:nth-child(4) {
   opacity: 1;
