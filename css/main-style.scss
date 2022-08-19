@@ -195,7 +195,10 @@ ul.titles {
   width: 100%;
   text-align: center;
   color: red;
-  cursor: pointer;
+
+  a {
+    color: white;
+  }
 }
 ul.titles li {
   list-style-type: none;
