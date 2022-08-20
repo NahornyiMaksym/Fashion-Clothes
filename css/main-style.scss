@@ -10,11 +10,12 @@
 
 @import "bootstrap.css";
 
-$font-liana : 'Liana';
-$liana-black : #000;
-$liana-white : #fff;
-$main-font-color : #000;
-$main-font : 'Raleway', sans-serif;
+
+$font-liana: 'Liana';
+$liana-black: #000;
+$liana-white: #fff;
+$main-font-color: #000;
+$main-font: 'Raleway', sans-serif;
 
 @mixin font-liana($size, $color) {
   font-weight: 400;
@@ -42,32 +43,54 @@ $main-font : 'Raleway', sans-serif;
   padding: 0;
   box-sizing: border-box;
 }
+
 header {
   @include main-font(14px, 500);
   padding-top: 12px;
 
-  //position: absolute;
-  //left: 0;
-  //right: 0;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
+
+  svg {
+    width: 100%;
+  }
 
   ul {
     flex-wrap: wrap;
+    padding-left: 0;
   }
 
   li {
     padding-top: 2px;
     list-style: none;
     margin: 0 18px;
+
     &:last-of-type {
       margin-right: 0;
     }
+
     &:first-of-type {
       margin-left: 0;
     }
+
+    a {
+      &:hover {
+        color: #000;
+      }
+    }
+
     @include max-screen(768px) {
       margin-left: 0;
     }
+  }
+}
+
+.logo {
+  display: block;
+  max-width: 60px;
+
+  img {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -76,6 +99,7 @@ header {
   padding-right: 31px;
   margin: auto;
 }
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -120,23 +144,24 @@ ul.items {
   position: relative;
   align-items: center;
 }
+
 ul.items li {
   list-style-type: none;
   /*width: 288px;*/
   /*width: 400px;*/
-  transition:
-          transform .5s linear,
-          left .5s linear,
-          margin-left .5s linear,
-          margin-right .5s linear,
-          width .5s linear,
-          height .5s linear;
+  transition: transform .5s linear,
+  left .5s linear,
+  margin-left .5s linear,
+  margin-right .5s linear,
+  width .5s linear,
+  height .5s linear;
   position: relative;
   //left: 0;
   /*transform: scale(0);*/
   width: 0;
   height: 0;
 }
+
 /* all items */
 ul.items li span {
   display: none;
@@ -145,6 +170,7 @@ ul.items li span {
 ul.items li:nth-child(3) {
   margin-left: 10px;
 }
+
 ul.items li:nth-child(5) {
   margin-right: 10px;
 }
@@ -156,10 +182,12 @@ ul.items li:nth-child(6) {
   width: 200px;
   height: 300px;
 }
+
 ul.items li:nth-child(3) {
   /*margin-left: -49px;*/
   /*margin-right: 49px;*/
 }
+
 /* center item */
 ul.items li:nth-child(4) {
   /*transform: scale(1);*/
@@ -177,6 +205,7 @@ ul.items li:nth-child(5) {
   width: 300px;
   height: 450px;
 }
+
 ul.items img {
   /*width: 400px;*/
   /*height: 600px;*/
@@ -200,6 +229,7 @@ ul.titles {
     color: white;
   }
 }
+
 ul.titles li {
   list-style-type: none;
   transform: scale(0);
@@ -210,10 +240,12 @@ ul.titles li {
   top: 0;
   @include font-liana(170px, $liana-white);
 }
+
 ul.titles li:nth-child(4) {
   opacity: 1;
   transform: scale(1);
 }
+
 div.carousel a.left {
   position: absolute;
   left: 0;
@@ -221,6 +253,7 @@ div.carousel a.left {
   bottom: 0;
   width: 36%;
 }
+
 div.carousel a.right {
   position: absolute;
   right: 0;
@@ -231,10 +264,12 @@ div.carousel a.right {
 
 h1 {
   @include font-liana(100px, $liana-black);
+  margin-bottom: 110px;
 }
 
 .text {
   @include main-font(16px, 400);
+  line-height: 24px;
 }
 
 .small-title {
@@ -243,7 +278,200 @@ h1 {
 }
 
 .main-section {
-  article {
-    padding-top: 100px;
+  height: 800px;
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-image: url("../images/freedom-main-sec.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  margin-bottom: 200px;
+
+}
+
+.main-sec-picture {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  max-width: 660px;
+  padding: 0;
+}
+.main-sec-article {
+  max-width: 608px;
+}
+.main-sec-p {
+  &:first-of-type {
+    margin-right: 16px;
+    margin-bottom: 0;
   }
+  max-width: 296px;
+  width: 100%;
+}
+
+.main-sec-p-cont {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+
+.button {
+  text-align: center;
+  display: inline-block;
+  color: #000;
+  @include main-font(14px, 400);
+  padding: 30px 55px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+
+
+
+
+.cont {
+  max-width: 1234px;
+  margin: auto;
+  @include max-screen(1300px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.section2 {
+  margin-bottom: 200px;
+  .sec2-picture {
+    max-width: 400px;
+    margin-right: 16px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+
+}
+
+.section-match {
+  margin-bottom: 200px;
+
+  article {
+    padding-top: 170px;
+  }
+  .match-pictures {
+    margin-bottom: 24px;
+  }
+
+  .match-big-picture {
+    img {
+      display: block;
+      width: 100%;
+    }
+    max-width: 608px;
+    margin-right: 16px;
+  }
+
+  .match-small-pic {
+    width: 49%;
+
+    img {
+      display: block;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    max-width: 296px;
+
+    &:first-of-type {
+      margin-right: 16px;
+    }
+  }
+  .match-title {
+    text-align: center;
+    margin-bottom: 24px;
+    @include main-font(20px, 500);
+
+  }
+
+  .match-text {
+    @include main-font(16px, 400);
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+
+}
+
+.rest-cardigans {
+  margin-bottom: 200px;
+
+  h4 {
+    text-align: center;
+    margin-bottom: 24px;
+    @include main-font(20px, 500);
+  }
+
+  .owl-pic {
+    max-width: 400px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.owl-carousel .owl-nav.disabled {
+  display: block;
+}
+
+.owl-carousel {
+  position: relative;
+}
+.owl-carousel .owl-nav button.owl-prev {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/btn-prev.svg");
+  position: absolute;
+  top: 23%;
+  left: -50px;
+  transition: all 0.3s;
+  border-radius: 50%;
+
+  &:hover {
+    transition: all 0.3s;
+    transform: scale(1.2);
+  }
+
+  &:active {
+    background-color: #565656;
+    transition: all 0.3s;
+    transform: scale(1);
+  }
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/btn-next.svg");
+  position: absolute;
+  top: 24%;
+  right: -50px;
+  transition: all 0.3s;
+  border-radius: 50%;
+  &:hover {
+    transition: all 0.3s;
+    transform: scale(1.2);
+  }
+
+  &:active {
+    background-color: #565656;
+    transition: all 0.3s;
+    transform: scale(1);
+  }
+}
+
+.owl-item.active.center {
+  margin: 0 8px;
 }

@@ -13,3 +13,5 @@ document.querySelector('div.carousel a.right').addEventListener('click', () => {
     const ulTitles = document.querySelector('ul.titles')
     ulTitles.append(ulTitles.querySelector('li:first-of-type'))
 })
+
+
