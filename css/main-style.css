@@ -218,6 +218,12 @@ h1 {
   background-size: 50%;
   margin-bottom: 200px; }
 
+.light-main-sec {
+  background-image: url("../images/light-main-pic.jpg"); }
+
+.flight-main-sec {
+  background-image: url("../images/flight-main-sec.jpg"); }
+
 .main-sec-picture {
   right: 0;
   top: 0;
