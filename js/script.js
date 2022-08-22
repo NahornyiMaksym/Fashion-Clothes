@@ -30,8 +30,8 @@ function throttle(f, t) {
         }
     }
 }
-const throttledLeft = throttle(left, 500)
-const throttledRight = throttle(right, 500)
+const throttledLeft = throttle(left, 1200)
+const throttledRight = throttle(right, 1200)
 const carousel = document.querySelector('div.carousel')
 carousel.addEventListener('mousewheel', (e) => {
     e.stopPropagation()
