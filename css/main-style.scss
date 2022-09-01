@@ -984,6 +984,35 @@ h1 {
 
   }
 
+  .test-j{
+padding-top: 150px;
+    margin-bottom: 174px;
+  }
+
+}
+.about-main-sec{
+  background-image: url("../images/about-main-big.jpg");
+  background-size: cover;
+  height: 92vh;
+  .pro-collection{
+    padding-top: 20%;
+    margin-bottom: 50vh;
+    margin-left: 22px;
+    margin-right: 22px;
+    font-family: Liana;
+    font-size: 100px;
+  }
+  .about-main-comment{
+    width: 494px;
+    font-family: Raleway;
+    font-size: 30px;
+    span{
+      font-family: Liana;
+      font-size: 60px;
+    }
+  }
+
+
 }
 
 footer {

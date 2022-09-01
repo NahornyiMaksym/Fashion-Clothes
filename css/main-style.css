@@ -646,6 +646,28 @@ h1 {
     font-family: "Raleway", sans-serif;
     text-align: end;
     margin-bottom: 0; }
+  .order-sec .test-j {
+    padding-top: 150px;
+    margin-bottom: 174px; }
+
+.about-main-sec {
+  background-image: url("../images/about-main-big.jpg");
+  background-size: cover;
+  height: 92vh; }
+  .about-main-sec .pro-collection {
+    padding-top: 20%;
+    margin-bottom: 50vh;
+    margin-left: 22px;
+    margin-right: 22px;
+    font-family: Liana;
+    font-size: 100px; }
+  .about-main-sec .about-main-comment {
+    width: 494px;
+    font-family: Raleway;
+    font-size: 30px; }
+    .about-main-sec .about-main-comment span {
+      font-family: Liana;
+      font-size: 60px; }
 
 footer {
   padding-top: 80px;
