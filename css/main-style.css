@@ -347,10 +347,6 @@ h1 {
   margin: auto; }
   @media screen and (max-width: 1300px) {
     .cont {
-      padding-left: 10px;
-      padding-right: 10px; } }
-  @media screen and (max-width: 800px) {
-    .cont {
       padding-left: 20px;
       padding-right: 20px; } }
 
@@ -469,22 +465,47 @@ h1 {
   box-sizing: border-box;
   padding-top: 150px;
   padding-bottom: 150px; }
+  .rest-cardigans .cont {
+    position: relative; }
   .rest-cardigans h4 {
     margin-bottom: 60px; }
+    @media screen and (max-width: 980px) {
+      .rest-cardigans h4 {
+        margin-bottom: 24px; } }
+  @media screen and (max-width: 1150px) {
+    .rest-cardigans {
+      padding-top: 50px;
+      padding-bottom: 60px; } }
+  @media screen and (max-width: 680px) {
+    .rest-cardigans {
+      padding-top: 12px; } }
 
 .ul-carousel {
   list-style: none;
   display: flex;
   align-items: center;
   height: 650px;
-  padding: 0;
-  position: relative; }
+  padding: 0; }
+  @media screen and (max-width: 930px) {
+    .ul-carousel {
+      height: 610px; } }
+  @media screen and (max-width: 780px) {
+    .ul-carousel {
+      height: 530px; } }
+  @media screen and (max-width: 680px) {
+    .ul-carousel {
+      height: 450px; } }
+  @media screen and (max-width: 500px) {
+    .ul-carousel {
+      height: 380px; } }
+  @media screen and (max-width: 380px) {
+    .ul-carousel {
+      height: 325px; } }
   .ul-carousel li {
     position: relative;
     box-sizing: border-box;
     transition: width 0.3s ease-in, height 0.3s ease-in;
-    width: 0;
-    height: 0; }
+    width: 0; }
     .ul-carousel li img {
       display: block;
       width: 100%;
@@ -492,38 +513,69 @@ h1 {
     .ul-carousel li:nth-of-type(2) {
       display: block;
       max-width: 510px;
-      height: 650px;
       width: 100%;
       margin-right: 125px; }
+      @media screen and (max-width: 1250px) {
+        .ul-carousel li:nth-of-type(2) {
+          margin-right: 90px; } }
+      @media screen and (max-width: 1150px) {
+        .ul-carousel li:nth-of-type(2) {
+          margin-right: 50px; } }
+      @media screen and (max-width: 1050px) {
+        .ul-carousel li:nth-of-type(2) {
+          margin-right: 20px; } }
     .ul-carousel li:nth-of-type(3) {
       display: block;
       max-width: 404px;
-      width: 100%;
-      height: 550px;
+      width: 80%;
       margin-right: 125px; }
+      @media screen and (max-width: 1250px) {
+        .ul-carousel li:nth-of-type(3) {
+          margin-right: 90px; } }
+      @media screen and (max-width: 1150px) {
+        .ul-carousel li:nth-of-type(3) {
+          margin-right: 50px; } }
+      @media screen and (max-width: 1050px) {
+        .ul-carousel li:nth-of-type(3) {
+          margin-right: 20px; } }
     .ul-carousel li:nth-of-type(4) {
       display: block;
       max-width: 510px;
-      width: 100%;
-      height: 650px; }
+      width: 100%; }
+
+.arrow-cont {
+  max-width: 298px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  @media screen and (max-width: 1300px) {
+    .arrow-cont {
+      right: 20px; } }
+  @media screen and (max-width: 780px) {
+    .arrow-cont {
+      position: static;
+      margin: auto; } }
 
 .arrow-left {
   display: inline-block;
-  top: -16%;
-  right: 37%;
   height: 50px;
   width: 105px;
-  position: absolute;
   background-image: url("../images/arrow-left-new.svg"); }
+  @media screen and (max-width: 500px) {
+    .arrow-left {
+      transform: scale(0.9); } }
 
 .arrow-right {
-  position: absolute;
-  top: -16%;
-  right: 26%;
   display: inline-block;
   height: 50px;
   width: 105px;
   background-image: url("../images/arrow-right-new.svg"); }
+  @media screen and (max-width: 500px) {
+    .arrow-right {
+      transform: scale(0.9); } }
 
 .overflow-x {
   overflow-x: hidden; }
