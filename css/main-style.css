@@ -661,13 +661,57 @@ h1 {
     margin-right: 22px;
     font-family: Liana;
     font-size: 100px; }
-  .about-main-sec .about-main-comment {
+
+.about-article-sec {
+  padding-top: 150px;
+  margin-bottom: 150px; }
+  .about-article-sec .about-main-comment {
     width: 494px;
     font-family: Raleway;
-    font-size: 30px; }
-    .about-main-sec .about-main-comment span {
+    font-size: 30px;
+    align-self: center; }
+    .about-article-sec .about-main-comment .comment-vidrodzhennya {
       font-family: Liana;
       font-size: 60px; }
+    .about-article-sec .about-main-comment .comment-text {
+      font-family: Raleway;
+      font-size: 16px;
+      line-height: 24px; }
+
+.about-brand-sec {
+  margin-bottom: 110px; }
+  .about-brand-sec:before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    top: -110px;
+    width: 100%; }
+  .about-brand-sec .comment-text {
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 24px; }
+  .about-brand-sec h3 {
+    font-family: Raleway;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 60px; }
+  .about-brand-sec .logo-div {
+    height: 404px;
+    width: 404px;
+    margin: auto; }
+  .about-brand-sec .img-brand-logo {
+    height: 100%;
+    display: block;
+    margin: auto; }
+  .about-brand-sec .about-brand-text {
+    padding-top: 45px;
+    margin-bottom: 45px; }
+
+#about-brand {
+  position: relative;
+  top: -120px; }
 
 footer {
   padding-top: 80px;

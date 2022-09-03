@@ -961,8 +961,6 @@ h1 {
     }
 
 
-
-
     @include max-screen(1163px) {
       padding-left: 30px;
     }
@@ -984,17 +982,19 @@ h1 {
 
   }
 
-  .test-j{
-padding-top: 150px;
+  .test-j {
+    padding-top: 150px;
     margin-bottom: 174px;
   }
 
 }
-.about-main-sec{
+
+.about-main-sec {
   background-image: url("../images/about-main-big.jpg");
   background-size: cover;
   height: 92vh;
-  .pro-collection{
+
+  .pro-collection {
     padding-top: 20%;
     margin-bottom: 50vh;
     margin-left: 22px;
@@ -1002,17 +1002,82 @@ padding-top: 150px;
     font-family: Liana;
     font-size: 100px;
   }
-  .about-main-comment{
+}
+
+.about-article-sec {
+  padding-top: 150px;
+  margin-bottom: 150px;
+
+  .about-main-comment {
     width: 494px;
     font-family: Raleway;
     font-size: 30px;
-    span{
+    align-self: center;
+
+    .comment-vidrodzhennya {
       font-family: Liana;
       font-size: 60px;
     }
+
+    .comment-text {
+      font-family: Raleway;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .left-part {
+
+    }
+
+  }
+}
+
+.about-brand-sec {
+  margin-bottom: 110px;
+
+  &:before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    top: -110px;
+    width: 100%;
   }
 
+  .comment-text {
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
+  h3 {
+    font-family: Raleway;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 60px;
+  }
+
+  .logo-div {
+    height: 404px;
+    width: 404px;
+    margin: auto;
+  }
+
+  .img-brand-logo {
+    height: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .about-brand-text {
+    padding-top: 45px;
+    margin-bottom: 45px;
+  }
+}
+#about-brand{
+  position: relative;
+  top: -120px;
 }
 
 footer {
