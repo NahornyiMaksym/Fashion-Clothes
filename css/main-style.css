@@ -294,15 +294,6 @@ h1 {
         margin-right: 0;
         margin-bottom: 20px; } }
 
-.rebirth-main-img {
-  background-image: url("../images/rebirth-main.jpg"); }
-
-.light-main-sec {
-  background-image: url("../images/light-main-pic.jpg"); }
-
-.flight-main-sec {
-  background-image: url("../images/flight-main-sec.jpg"); }
-
 .main-sec-picture {
   right: 0;
   top: 0;
@@ -544,12 +535,12 @@ h1 {
       width: 100%; }
 
 .arrow-cont {
-  max-width: 298px;
+  max-width: 300px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 0; }
   @media screen and (max-width: 1300px) {
     .arrow-cont {
@@ -561,21 +552,26 @@ h1 {
 
 .arrow-left {
   display: inline-block;
-  height: 50px;
+  height: 52px;
   width: 105px;
-  background-image: url("../images/arrow-left-new.svg"); }
+  background-image: url("../images/arrow-left-new.svg");
+  background-size: contain;
+  background-repeat: no-repeat; }
   @media screen and (max-width: 500px) {
     .arrow-left {
       transform: scale(0.9); } }
 
 .arrow-right {
   display: inline-block;
-  height: 50px;
+  height: 52px;
   width: 105px;
-  background-image: url("../images/arrow-right-new.svg"); }
+  background-image: url("../images/arrow-left-new.svg");
+  transform: scale(-1, 1);
+  background-size: contain;
+  background-repeat: no-repeat; }
   @media screen and (max-width: 500px) {
     .arrow-right {
-      transform: scale(0.9); } }
+      transform: scale(-0.9, 0.9); } }
 
 .overflow-x {
   overflow-x: hidden; }
@@ -631,6 +627,9 @@ h1 {
       .order-sec .designer-title {
         font-size: 45px;
         margin-bottom: 45px; } }
+    @media screen and (max-width: 1120px) {
+      .order-sec .designer-title {
+        padding-top: 25px; } }
     @media screen and (max-width: 998px) {
       .order-sec .designer-title {
         margin-right: 0;
@@ -776,6 +775,9 @@ footer {
       font-size: 30px;
       font-family: "Raleway", sans-serif;
       margin-bottom: 16px; }
+      @media screen and (max-width: 860px) {
+        footer .contacts p {
+          font-size: 24px; } }
     footer .contacts img {
       display: inline-block;
       width: 24px;

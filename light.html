@@ -42,31 +42,45 @@
 </header>
 
 
-<section class=" main-section light-main-sec">
-    <div class="cont">
+<section class="main-section">
+    <div class="cont d-flex">
         <article class="main-sec-article">
-            <h1>
-                Свiтло
-            </h1>
-            <p class="small-title">
+
+            <p class="title">
                 Про кардиган
             </p>
             <div class="main-sec-p-cont">
                 <p class="main-sec-p text">
-                    Печаль, сльози і біль асоціюються нині з Україною. Та вона геть не про це. Україна – про свободу, щирість, відкритість, посмішки, динаміку та легкість. Про сяйво життя. Саме це внутрішнє світло допомогло вистояти у мороку лютого.
+                    Печаль, сльози і біль асоціюються нині з Україною. Та вона геть не про це. Україна – про свободу,
+                    щирість, відкритість, посмішки, динаміку та легкість. Про сяйво життя. Саме це внутрішнє світло
+                    допомогло вистояти у мороку лютого.
                 </p>
 
                 <p class="main-sec-p text">
-                    І це світло зрештою переможе. А його частинка назавжди оселилася у кардигані з синьо-жовтими метеликами. Вони тихенько сядуть не плечі та стануть затишними оберегами.
+                    І це світло зрештою переможе. А його частинка назавжди оселилася у кардигані з синьо-жовтими
+                    метеликами. Вони тихенько сядуть не плечі та стануть затишними оберегами.
                 </p>
             </div>
+
+            <a href="#" class="button">
+                Замовити
+            </a>
+
+            <h1>
+                Свiтло
+            </h1>
+
         </article>
 
-        <a href="#" class="button">
-            Замовити
-        </a>
+        <div class="big-pic-main">
+            <picture>
+                <source srcset="images/fashion1.jpg" media="(max-width: 400px)">
+                <img src="images/light-main-pic.jpg" alt="picture">
+            </picture>
+        </div>
 
     </div>
+
 </section>
 
 <section class="section2">
@@ -126,37 +140,117 @@
 
 <section class="rest-cardigans">
     <div class="cont">
-        <h4>
-            Інші кардигани
+        <h4 class="title">
+            Усі кардигани
         </h4>
 
-        <div class="owl-carousel">
-            <div class="owl-pic">
-                <img src="images/rest-butterfly.jpg" alt="picture">
-            </div>
-            <div class="owl-pic">
-                <img src="images/rest-blue.jpg" alt="picture">
-            </div>
-            <div class="owl-pic">
-                <img src="images/rest-blue-white.jpg" alt="picture">
-            </div>
-        </div>
-    </div>
+        <ul class="ul-carousel m">
 
+            <li class="el1">
+                <img src="images/rest-butterfly.jpg" alt="picture">
+            </li>
+
+            <li class="el2">
+                <img src="images/rest-blue.jpg" alt="picture">
+            </li>
+
+            <li class="el3">
+                <img src="images/rest-blue-white.jpg" alt="picture">
+            </li>
+
+            <li class="el4">
+                <img src="images/rest-butterfly.jpg" alt="picture">
+            </li>
+
+            <li class="el5">
+                <img src="images/rest-blue.jpg" alt="picture">
+            </li>
+
+            <li class="el6">
+                <img src="images/rest-blue-white.jpg" alt="picture">
+            </li>
+
+        </ul>
+
+        <div class="arrow-cont">
+            <a class="arrow-left">
+            </a>
+            <a class="arrow-right">
+            </a>
+        </div>
+
+    </div>
 </section>
 
-<script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"></script>
+<section class="order-sec">
+
+    <div class="cont">
+
+        <p class="title">
+            Замовити
+        </p>
+
+        <div class="d-flex justify-content-between flex-adapt">
+            <div class="photo-designer">
+                <img src="images/designer.jpg" alt="designer photo">
+            </div>
+
+            <div class="designer-text">
+                <p class="designer-title">
+                    Кожен елемент колекції – частинка моєї історії
+                </p>
+                <p class="designer-speech">
+                    <span>
+                        Це не про заробіток, це про мистецтво, яким я хочу поділися зі Своїми людьми.
+                    </span>
+
+                    <span>
+                        Запрошую на віртуальну каву, щоб познайомитись ближче та підібрати саме той кардиган, що підкреслить
+                    вашу внутрішню силу.
+                    </span>
+
+                    <span>
+                        Відкрию секрет: ми навіть можемо довершити образ взуттям, виготовленим в єдиному екземплярі під
+                    обраний кардиган, із урахуванням вашого стилю.
+                    </span>
+                </p>
+
+                <p class="designer-name">
+                    Олена Костюкова,<br> дизайнерка бренду
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<footer>
+    <div class="contacts">
+        <p>
+            Пишіть мені
+        </p>
+
+        <a href="#">
+            <img src="images/mail.svg" alt="mail">
+        </a>
+
+        <a href="#">
+            <img src="images/insta.svg" alt="insta">
+        </a>
+
+        <a href="#">
+            <img src="images/facebook.svg" alt="facebook">
+        </a>
+
+    </div>
+</footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/owl.carousel.js"></script>
 
 <script src="js/script-freedom.js"></script>
 

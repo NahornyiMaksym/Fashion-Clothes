@@ -423,17 +423,17 @@ h1 {
 
 }
 
-.rebirth-main-img {
-  background-image: url("../images/rebirth-main.jpg");
-}
+//.rebirth-main-img {
+//  background-image: url("../images/rebirth-main.jpg");
+//}
 
-.light-main-sec {
-  background-image: url("../images/light-main-pic.jpg");
-}
+//.light-main-sec {
+//  background-image: url("../images/light-main-pic.jpg");
+//}
 
-.flight-main-sec {
-  background-image: url("../images/flight-main-sec.jpg");
-}
+//.flight-main-sec {
+//  background-image: url("../images/flight-main-sec.jpg");
+//}
 
 .main-sec-picture {
   right: 0;
@@ -870,13 +870,13 @@ h1 {
 }
 
 .arrow-cont {
-  max-width: 298px;
+  max-width: 300px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 0;
 
   @include max-screen(1300px) {
@@ -894,10 +894,12 @@ h1 {
   display: inline-block;
   //top: 0;
   //right: 15%;
-  height: 50px;
+  height: 52px;
   width: 105px;
   //position: absolute;
   background-image: url("../images/arrow-left-new.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   @include max-screen(500px) {
     transform: scale(0.9);
   }
@@ -908,11 +910,15 @@ h1 {
   //top: 0;
   //right: 10px;
   display: inline-block;
-  height: 50px;
+  height: 52px;
   width: 105px;
-  background-image: url("../images/arrow-right-new.svg");
+  background-image: url("../images/arrow-left-new.svg");
+  transform: scale(-1, 1);
+  background-size: contain;
+  background-repeat: no-repeat;
+
   @include max-screen(500px) {
-    transform: scale(0.9);
+    transform: scale(-0.9, 0.9);
   }
 }
 
@@ -988,6 +994,10 @@ h1 {
       font-size: 45px;
       margin-bottom: 45px;
 
+    }
+
+    @include max-screen(1120px) {
+      padding-top: 25px;
     }
 
     @include max-screen(998px) {
@@ -1186,6 +1196,10 @@ footer {
     p {
       @include main-font(30px, 500);
       margin-bottom: 16px;
+
+      @include max-screen(860px) {
+        font-size: 24px;
+      }
     }
 
     img {
