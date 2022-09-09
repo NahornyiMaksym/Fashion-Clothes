@@ -703,31 +703,96 @@ h1 {
 
 .about-main-sec {
   background-image: url("../images/about-main-big.jpg");
+  background-position: top center;
   background-size: cover;
   height: 92vh; }
+  @media screen and (max-width: 767px) {
+    .about-main-sec {
+      background-image: url("../images/about-main-s.jpg"); } }
+  .about-main-sec:before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    width: 100%; }
   .about-main-sec .pro-collection {
     padding-top: 20%;
     margin-bottom: 50vh;
     margin-left: 22px;
     margin-right: 22px;
     font-family: Liana;
-    font-size: 100px; }
+    font-size: 100px;
+    position: relative; }
+    @media screen and (max-width: 767px) {
+      .about-main-sec .pro-collection {
+        font-size: 50px;
+        margin-left: 0;
+        margin-right: 0; } }
+  @media screen and (max-width: 575px) {
+    .about-main-sec .span-collection {
+      position: relative;
+      top: 160px; } }
 
 .about-article-sec {
   padding-top: 150px;
   margin-bottom: 150px; }
+  @media screen and (max-width: 767px) {
+    .about-article-sec {
+      padding-top: 60px;
+      margin-bottom: 60px; } }
+  .about-article-sec:before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .about-article-sec:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    bottom: -150px;
+    width: 100%; }
+    @media screen and (max-width: 767px) {
+      .about-article-sec:after {
+        bottom: -60px; } }
+  .about-article-sec article {
+    padding: 0; }
   .about-article-sec .about-main-comment {
     width: 494px;
     font-family: Raleway;
     font-size: 30px;
+    line-height: 48px;
     align-self: center; }
+    @media screen and (max-width: 575px) {
+      .about-article-sec .about-main-comment {
+        font-size: 20px;
+        line-height: 30px; } }
     .about-article-sec .about-main-comment .comment-vidrodzhennya {
       font-family: Liana;
       font-size: 60px; }
-    .about-article-sec .about-main-comment .comment-text {
-      font-family: Raleway;
-      font-size: 16px;
-      line-height: 24px; }
+      @media screen and (max-width: 1199px) {
+        .about-article-sec .about-main-comment .comment-vidrodzhennya {
+          font-size: 52px; } }
+      @media screen and (max-width: 575px) {
+        .about-article-sec .about-main-comment .comment-vidrodzhennya {
+          font-size: 34px; } }
+  .about-article-sec .comment-text {
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 24px; }
+    @media screen and (max-width: 575px) {
+      .about-article-sec .comment-text {
+        font-size: 14px;
+        line-height: 20px; } }
+  .about-article-sec .left-part {
+    margin-bottom: 24px;
+    padding: 0; }
 
 .about-brand-sec {
   margin-bottom: 110px; }

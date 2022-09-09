@@ -1096,8 +1096,21 @@ h1 {
 
 .about-main-sec {
   background-image: url("../images/about-main-big.jpg");
+  background-position: top center;
   background-size: cover;
   height: 92vh;
+  @include max-screen(767px){
+    background-image: url("../images/about-main-s.jpg");
+  }
+  &:before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 
   .pro-collection {
     padding-top: 20%;
@@ -1106,34 +1119,87 @@ h1 {
     margin-right: 22px;
     font-family: Liana;
     font-size: 100px;
+    position: relative;
+    @include max-screen(767px){
+      font-size: 50px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .span-collection{
+    @include max-screen(575px){
+      position: relative;
+      top: 160px;
+    }
   }
 }
 
 .about-article-sec {
   padding-top: 150px;
   margin-bottom: 150px;
+  @include max-screen(767px){
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
+  &:before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  &:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+    @include max-screen(767px){
+      bottom: -60px;
+    }
+  }
+  article{
+    padding: 0;
+  }
 
   .about-main-comment {
     width: 494px;
     font-family: Raleway;
     font-size: 30px;
+    line-height: 48px;
     align-self: center;
+    @include max-screen(575px){
+      font-size: 20px;
+      line-height: 30px;
+    }
 
     .comment-vidrodzhennya {
       font-family: Liana;
       font-size: 60px;
+      @include max-screen(1199px){
+        font-size: 52px;
+      }
+      @include max-screen(575px){
+        font-size: 34px;
+      }
     }
-
-    .comment-text {
-      font-family: Raleway;
-      font-size: 16px;
-      line-height: 24px;
+  }
+  .comment-text {
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 24px;
+    @include max-screen(575px){
+      font-size: 14px;
+      line-height: 20px;
     }
-
-    .left-part {
-
-    }
-
+  }
+  .left-part {
+    margin-bottom: 24px;
+    padding: 0;
   }
 }
 
