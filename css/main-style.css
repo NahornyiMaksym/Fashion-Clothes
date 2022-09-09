@@ -1,7 +1,7 @@
 @import url(bootstrap.css);
 @font-face {
   font-family: 'Liana';
-  src: url("../fonts/Liana.woff2") format("woff2"), url("../fonts/Liana.woff") format("woff"), url("../fonts/Liana.ttf") format("truetype");
+  src: url("../fonts/Lainy_Day.woff2") format("woff2"), url("../fonts/Lainy_Day.woff") format("woff"), url("../fonts/Lainy_Day.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
@@ -761,8 +761,6 @@ h1 {
     @media screen and (max-width: 767px) {
       .about-article-sec:after {
         bottom: -60px; } }
-  .about-article-sec article {
-    padding: 0; }
   .about-article-sec .about-main-comment {
     width: 494px;
     font-family: Raleway;
@@ -813,10 +811,19 @@ h1 {
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 60px; }
+    @media screen and (max-width: 575px) {
+      .about-brand-sec h3 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px; } }
   .about-brand-sec .logo-div {
-    height: 404px;
-    width: 404px;
+    max-height: 404px;
+    max-width: 404px;
     margin: auto; }
+    @media screen and (max-width: 575px) {
+      .about-brand-sec .logo-div {
+        height: 130px;
+        width: 130px; } }
   .about-brand-sec .img-brand-logo {
     height: 100%;
     display: block;
@@ -824,6 +831,9 @@ h1 {
   .about-brand-sec .about-brand-text {
     padding-top: 45px;
     margin-bottom: 45px; }
+    @media screen and (max-width: 575px) {
+      .about-brand-sec .about-brand-text {
+        margin-bottom: 5px; } }
 
 #about-brand {
   position: relative;

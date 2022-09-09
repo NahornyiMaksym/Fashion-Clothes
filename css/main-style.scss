@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Liana';
-  src: url('../fonts/Liana.woff2') format('woff2'),
-  url('../fonts/Liana.woff') format('woff'),
-  url('../fonts/Liana.ttf') format('truetype');
+  src: url('../fonts/Lainy_Day.woff2') format('woff2'),
+  url('../fonts/Lainy_Day.woff') format('woff'),
+  url('../fonts/Lainy_Day.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1163,7 +1163,7 @@ h1 {
     }
   }
   article{
-    padding: 0;
+    //padding: 0;
   }
 
   .about-main-comment {
@@ -1227,16 +1227,26 @@ h1 {
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 60px;
+    @include max-screen(575px){
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 24px;
+    }
   }
 
   .logo-div {
-    height: 404px;
-    width: 404px;
+    max-height: 404px;
+    max-width: 404px;
     margin: auto;
+    @include max-screen(575px){
+      height: 130px;
+      width: 130px;
+    }
   }
 
   .img-brand-logo {
     height: 100%;
+    //width: 100%;
     display: block;
     margin: auto;
   }
@@ -1244,6 +1254,9 @@ h1 {
   .about-brand-text {
     padding-top: 45px;
     margin-bottom: 45px;
+    @include max-screen(575px){
+      margin-bottom: 5px;
+    }
   }
 }
 #about-brand{
