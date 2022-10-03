@@ -154,6 +154,10 @@ ul.items {
   /*margin-left: -400px;*/
   position: relative;
   align-items: center;
+  @include max-screen(575px){
+  //justify-content: center;
+    height: 400px;
+  }
 }
 
 ul.items li {
@@ -165,7 +169,8 @@ ul.items li {
   margin-left .5s ease-in-out,
   margin-right .5s ease-in-out,
   width .5s ease-in-out,
-  height .5s ease-in-out;
+  height .5s ease-in-out,
+  padding-top .5s ease-in-out;
   position: relative;
   //left: 0;
   /*transform: scale(0);*/
@@ -180,10 +185,18 @@ ul.items li span {
 
 ul.items li:nth-child(3) {
   margin-left: 10px;
+  @include max-screen(575px){
+    margin-left: -105px;
+    margin-right: -10px;
+  }
 }
 
 ul.items li:nth-child(5) {
   margin-right: 10px;
+  @include max-screen(575px){
+    margin-right: -105px;
+    margin-left: -10px;
+  }
 }
 
 /* right items */
@@ -192,6 +205,10 @@ ul.items li:nth-child(6) {
   /*transform: scale(.5);*/
   width: 200px;
   height: 300px;
+  @include max-screen(765px){
+    width: 0px;
+    height: 0px;
+  }
 }
 
 ul.items li:nth-child(3) {
@@ -207,6 +224,10 @@ ul.items li:nth-child(4) {
   margin-right: 10px;
   margin-left: 10px;
   cursor: pointer;
+  @include max-screen(575px){
+  padding-top: 50px;
+    height: 400px;
+  }
 }
 
 /* left items */
@@ -215,6 +236,10 @@ ul.items li:nth-child(5) {
   /*transform: scale(.75);*/
   width: 300px;
   height: 450px;
+  @include max-screen(575px){
+    padding-top: 50px;
+    height: 300px;
+  }
 }
 
 ul.items img {
@@ -700,6 +725,7 @@ h1 {
   @include max-screen(1150px) {
     padding-top: 50px;
     padding-bottom: 60px;
+    //margin-bottom: 34px;
   }
 
   @include max-screen(680px) {
@@ -1214,7 +1240,11 @@ h1 {
     position: absolute;
     top: -110px;
     width: 100%;
+    @include max-screen(1150px){
+      top: -40px;
+    }
   }
+
 
   .comment-text {
     font-family: Raleway;
