@@ -52,6 +52,9 @@ header {
   padding-right: 31px;
   margin: auto; }
 
+.container-fluid {
+  overflow: hidden; }
+
 section {
   position: relative; }
 
