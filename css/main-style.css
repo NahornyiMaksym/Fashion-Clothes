@@ -206,6 +206,45 @@ ul.titles li {
     ul.titles li {
       font-size: 50px; } }
 
+#vidrodzhennya {
+  list-style-type: none;
+  position: absolute;
+  width: 100%;
+  top: 38%;
+  left: 20%;
+  font-weight: 400;
+  color: #fff;
+  font-size: 170px;
+  font-family: "Liana"; }
+  @media screen and (max-width: 1200px) {
+    #vidrodzhennya {
+      font-size: 150px;
+      top: 30%;
+      left: 15%; } }
+  @media screen and (max-width: 992px) {
+    #vidrodzhennya {
+      font-size: 138px;
+      top: 22%;
+      left: 10%; } }
+  @media screen and (max-width: 765px) {
+    #vidrodzhennya {
+      font-size: 100px;
+      top: 22%;
+      left: 10%; } }
+  @media screen and (max-width: 575px) {
+    #vidrodzhennya {
+      font-size: 50px;
+      top: 60%;
+      left: 25%; } }
+  @media screen and (max-width: 500px) {
+    #vidrodzhennya {
+      top: 60%;
+      left: 19%; } }
+  @media screen and (max-width: 350px) {
+    #vidrodzhennya {
+      top: 60%;
+      left: 10%; } }
+
 ul.titles li:nth-child(4) {
   opacity: 1;
   transform: scale(1); }
@@ -245,6 +284,9 @@ h1 {
   @media screen and (max-width: 912px) {
     .title {
       font-size: 24px; } }
+
+.margin-b-100 {
+  margin-bottom: 100px; }
 
 .main-section {
   position: relative; }

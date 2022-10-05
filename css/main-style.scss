@@ -282,6 +282,42 @@ ul.titles li {
     font-size: 50px;
   }
 }
+#vidrodzhennya{
+  list-style-type: none;
+  position: absolute;
+  width: 100%;
+  top: 38%;
+  left: 20%;
+  @include font-liana(170px, $liana-white);
+  @include max-screen(1200px) {
+    font-size: 150px;
+    top: 30%;
+    left: 15%;
+  }
+  @include max-screen(992px) {
+    font-size: 138px;
+    top: 22%;
+    left: 10%;
+  }
+  @include max-screen(765px) {
+    font-size: 100px;
+    top: 22%;
+    left: 10%;
+  }
+  @include max-screen(575px) {
+    font-size: 50px;
+    top: 60%;
+    left: 25%;
+  }
+  @include max-screen(500px) {
+    top: 60%;
+    left: 19%;
+  }
+  @include max-screen(350px) {
+    top: 60%;
+    left: 10%;
+  }
+}
 
 ul.titles li:nth-child(4) {
   opacity: 1;
@@ -319,7 +355,9 @@ h1 {
     font-size: 24px;
   }
 }
-
+.margin-b-100 {
+  margin-bottom: 100px;
+}
 .main-section {
   position: relative;
 
