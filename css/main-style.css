@@ -199,6 +199,12 @@ ul.titles li {
   color: #fff;
   font-size: 170px;
   font-family: "Liana"; }
+  @media screen and (max-width: 992px) {
+    ul.titles li {
+      font-size: 140px; } }
+  @media screen and (max-width: 575px) {
+    ul.titles li {
+      font-size: 50px; } }
 
 ul.titles li:nth-child(4) {
   opacity: 1;

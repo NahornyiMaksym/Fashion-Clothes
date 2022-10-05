@@ -275,6 +275,12 @@ ul.titles li {
   width: 100%;
   top: 0;
   @include font-liana(170px, $liana-white);
+  @include max-screen(992px) {
+    font-size: 140px;
+  }
+  @include max-screen(575px) {
+    font-size: 50px;
+  }
 }
 
 ul.titles li:nth-child(4) {
