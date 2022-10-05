@@ -413,6 +413,10 @@ h1 {
     .cont {
       padding-left: 20px;
       padding-right: 20px; } }
+  @media screen and (max-width: 550px) {
+    .cont {
+      max-width: 100vh;
+      overflow: hidden; } }
 
 .section2 {
   padding-top: 150px;
