@@ -215,6 +215,7 @@ ul.titles li {
   width: 100%;
   top: 38%;
   left: 20%;
+  pointer-events: none;
   font-weight: 400;
   color: #fff;
   font-size: 170px;

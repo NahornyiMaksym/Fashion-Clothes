@@ -291,6 +291,7 @@ ul.titles li {
   width: 100%;
   top: 38%;
   left: 20%;
+  pointer-events: none;
   @include font-liana(170px, $liana-white);
   @include max-screen(1200px) {
     font-size: 150px;
